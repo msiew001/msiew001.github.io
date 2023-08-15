@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,14 +18,31 @@
             var randomNumber = getRandomNumber();
             var randomNumberContainer = document.getElementById("random-number");
             randomNumberContainer.textContent = randomNumber;
+
+            var yesButton = document.getElementById("yes-button");
+            var noButton = document.getElementById("no-button");
+            var thankYouMessage = document.getElementById("thank-you-message");
+
+            yesButton.addEventListener("click", function() {
+                thankYouMessage.textContent = "Thank you for liking the website!";
+            });
+
+            noButton.addEventListener("click", function() {
+                thankYouMessage.textContent = "Thank you for your feedback!";
+            });
         }
     </script>
     
 </head>
 <body onload="updateContent()">
-    <h1>Welcome to My Simple Website</h1>
-    <p>This is a basic example of a website hosted on GitHub Pages.</p>
-    <p>Here's a random number from the list [0, 0.2, 0.4, 0.6, 0.8]:</p>
+    <h1>Welcome to erp-MEC</h1>
+    <p>Your usage level is </p>
+
     <p id="random-number"></p>
+
+    <p>Do you like this website?</p>
+    <button id="yes-button">Yes</button>
+    <button id="no-button">No</button>
+    <p id="thank-you-message"></p>
 </body>
 </html>
