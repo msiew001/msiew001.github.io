@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Website</title>
+    
+    <script>
+        // Function to generate a random number from the provided list
+        function getRandomNumber() {
+            var numbers = [0, 0.2, 0.4, 0.6, 0.8];
+            var randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
+            return randomNumber;
+        }
+
+        // Function to update the content of the webpage
+        function updateContent() {
+            var randomNumber = getRandomNumber();
+            var randomNumberContainer = document.getElementById("random-number");
+            randomNumberContainer.textContent = randomNumber;
+        }
+    </script>
+    
 </head>
 <body>
     <h1>Welcome to My Simple Website</h1>
     <p>This is a basic example of a website hosted on GitHub Pages.</p>
+    <p>Here's a random number from the list [0, 0.2, 0.4, 0.6, 0.8]:</p>
+    <p id="random-number"></p>
 </body>
 </html>
