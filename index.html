@@ -8,11 +8,6 @@
     <script>
         // Function to generate a random number from the provided list
         function getRandomNumber() {
-            <!-- 
-                var numbers = [0, 0.2, 0.4, 0.6, 0.8];
-                var randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-                return randomNumber;
-            -->
             return Math.random();
             
         }
@@ -22,7 +17,7 @@
             var randomNumber = getRandomNumber();
     
             var randomNumberContainer = document.getElementById("random-number");
-            randomNumberContainer.textContent = randomNumber.toFixed(2); // Displaying with 2 decimal places
+            randomNumberContainer.textContent = randomNumber.toFixed(3); // Displaying with 2 decimal places
 
 
             var yesButton = document.getElementById("yes-button");
