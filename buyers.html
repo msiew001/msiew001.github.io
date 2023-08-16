@@ -23,6 +23,9 @@
             var yesButton = document.getElementById("yes-button");
             var noButton = document.getElementById("no-button");
             var thankYouMessage = document.getElementById("thank-you-message");
+            var optionAButton = document.getElementById("option-a");
+            var optionBButton = document.getElementById("option-b");
+            var optionCButton = document.getElementById("option-c");
 
             yesButton.addEventListener("click", function() {
                 thankYouMessage.textContent = "Thank you for your choice!";
@@ -30,6 +33,18 @@
 
             noButton.addEventListener("click", function() {
                 thankYouMessage.textContent = "Thank you for your choice!";
+            });
+
+            optionAButton.addEventListener("click", function() {
+                thankYouMessage.textContent = "Thank you for selecting Option A!";
+            });
+
+            optionBButton.addEventListener("click", function() {
+                thankYouMessage.textContent = "Thank you for selecting Option B!";
+            });
+
+            optionCButton.addEventListener("click", function() {
+                thankYouMessage.textContent = "Thank you for selecting Option C!";
             });
         }
     </script>
