@@ -19,21 +19,13 @@
             var randomNumberContainer = document.getElementById("random-number");
             randomNumberContainer.textContent = randomNumber.toFixed(3); // Displaying with 2 decimal places
 
-
-            var yesButton = document.getElementById("yes-button");
-            var noButton = document.getElementById("no-button");
+            
             var thankYouMessage = document.getElementById("thank-you-message");
             var optionAButton = document.getElementById("option-a");
             var optionBButton = document.getElementById("option-b");
             var optionCButton = document.getElementById("option-c");
 
-            yesButton.addEventListener("click", function() {
-                thankYouMessage.textContent = "Thank you for your choice!";
-            });
-
-            noButton.addEventListener("click", function() {
-                thankYouMessage.textContent = "Thank you for your choice!";
-            });
+           
 
             optionAButton.addEventListener("click", function() {
                 thankYouMessage.textContent = "Thank you for your choice!";
