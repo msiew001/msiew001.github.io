@@ -27,6 +27,26 @@
             var randomNumberContainer2 = document.getElementById("random-number-2");
             randomNumberContainer2.textContent = randomNumber2.toFixed(3); // Displaying with 2 decimal places
 
+            var qo= 0.6
+            var qs= 0.6
+            var po= 0.1
+            var ps = 0.1
+
+            var queueNumberElement = document.getElementById("q-o");
+            queueNumberElement.textContent = "The On-Demand supply, \(q_o \) is " + qo;
+
+            var queueNumberElement = document.getElementById("q-s");
+            queueNumberElement.textContent = "The Sharing Pool's supply (re-sold units), \(q_s \) is " + qs;
+
+            var queueNumberElement = document.getElementById("p-o");
+            queueNumberElement.textContent = "The price per resource unit for the On-Demand Pool, \(p_o \) is " + po;
+
+            var queueNumberElement = document.getElementById("p-s");
+            queueNumberElement.textContent = "The price per resource unit for the Sharing Pool, \(p_s \) is " + ps;
+
+
+
+
             
             var thankYouMessage = document.getElementById("thank-you-message");
             var optionAButton = document.getElementById("option-a");
@@ -57,6 +77,11 @@
 
     <p>Your utility obtained, and hence willingness to pay, \(u_i\) is </p>
     <p id="random-number-2"></p>
+
+    <p id="q-o"></p>
+    <p id="q-s"></p>
+    <p id="p-o"></p>
+    <p id="p-r"></p>
 
 
     <p> If you choose the On-Demand Pool, your payoff \(= u_i q_o - p_o \).</p>
