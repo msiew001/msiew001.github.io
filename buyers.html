@@ -33,7 +33,7 @@
             var pr = 0.1
 
             var queueNumberElement = document.getElementById("q-o");
-            queueNumberElement.textContent = "The On-Demand supply, \(q_o \) is " + qo;
+            queueNumberElement.textContent = qo;
 
             var queueNumberElement = document.getElementById("q-s");
             queueNumberElement.textContent = "The Sharing Pool's supply (re-sold units), \(q_s \) is " + qs;
@@ -84,7 +84,8 @@
     <p>Your utility obtained, and hence willingness to pay, \(u_i\) is </p>
     <p id="random-number-2"></p>
 
-    <p id="q-o" class="math-font"></p>
+    <p> The On-Demand supply, \(q_o \) is <span id="q-o"></span></p>
+    
     <p id="q-s" class="math-font"></p>
     <p id="p-o" class="math-font"></p>
     <p id="p-r" class="math-font"></p>
