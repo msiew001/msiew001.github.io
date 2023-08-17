@@ -16,10 +16,20 @@
 
         // Function to update the content of the webpage
         function updateContent() {
+            var randomAppls = ['IoT Sensing Analytics', 'Distributed AI', 'Predictive Maintence', 'Remote Monitoring', 'Industrial IoT', 'Augmented Reality Display'];
+            var randomAppl = getRandomElement(randomAppls);
+
+            var randomApplElement = document.getElementById("random-appl");
+            randomApplElement.textContent = randomAppl;
+            
             var randomNumber = getRandomNumber();
+            var randomNumber2 = getRandomNumber();
     
             var randomNumberContainer = document.getElementById("random-number");
-            randomNumberContainer.textContent = randomNumber.toFixed(3); // Displaying with 2 decimal places
+            randomNumberContainer.textContent = randomNumber.toFixed(3); // Displaying with 3 decimal places
+
+            var randomNumberContainer2 = document.getElementById("random-number-2");
+            randomNumberContainer2.textContent = randomNumber2.toFixed(3); // Displaying with 3 decimal places
 
             var pr = 0.1
             var delta=0.3
@@ -46,10 +56,16 @@
     
 </head>
 <body onload="updateContent()">
-    <h1>Welcome to the Re-sellers page</h1>
-    <p>Your remaining usage level for this time-slot is </p>
+    <h1>Welcome to the Re-sellers portal </h1>
+
+    <p> The application you are using is <em><span id="random-appl"></span></em> </p>
+    
+    <p>After factoring in your usage level, your remaining usage quota for this time-slot is </p>
 
     <p id="random-number"></p>
+
+    <p>Your inconvenience cost of selling, \(g_i\), inclusive of the uncertainty of further usage this time-slot is </p>
+    <p id="random-number-2"></p>
 
     <p> The price at which you will re-sell resource units, and the platform commission is: </p>
 
