@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>erpMEC</title>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
     
     <script>
         // Function to generate a random number from the provided list
@@ -44,9 +46,18 @@
 </head>
 <body onload="updateContent()">
     <h1>Welcome to erp-MEC: Buyers page</h1>
-    <p>Your usage level is </p>
+    <p>Your application's required usage level this time-slot, \(d_i\) is </p>
 
     <p id="random-number"></p>
+
+    <p>Your utility obtained, and hence willingness to pay, \(u_i\) is <span id="random-number"></span> </p>
+
+
+    <p> If you choose the On-Demand Pool, your payoff \(= u_i q_o - p_o \).</p>
+
+    <p> If you choose the On-Demand Pool, your payoff \(= u_i q_s - p_r \).</p>
+
+    <p> If you choose the On-Demand Pool, your payoff \(= 0\).</p>
 
     <p>How would you like to buy compute resource quota units?</p>
     
