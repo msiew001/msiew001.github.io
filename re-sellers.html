@@ -14,6 +14,12 @@
             
         }
 
+        // Function to get a random element from an array
+        function getRandomElement(array) {
+            var randomIndex = Math.floor(Math.random() * array.length);
+            return array[randomIndex];
+        }
+
         // Function to update the content of the webpage
         function updateContent() {
             var randomAppls = ['IoT Sensing Analytics', 'Distributed AI', 'Predictive Maintence', 'Remote Monitoring', 'Industrial IoT', 'Augmented Reality Display'];
