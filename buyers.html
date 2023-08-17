@@ -16,10 +16,16 @@
 
         // Function to update the content of the webpage
         function updateContent() {
-            var randomNumber = getRandomNumber();
-    
-            var randomNumberContainer = document.getElementById("random-number");
-            randomNumberContainer.textContent = randomNumber.toFixed(3); // Displaying with 2 decimal places
+            
+
+            var randomNumber1 = getRandomNumber();
+            var randomNumber2 = getRandomNumber();
+
+            var randomNumberContainer1 = document.getElementById("random-number-1");
+            randomNumberContainer1.textContent = randomNumber1.toFixed(3); // Displaying with 2 decimal places
+
+            var randomNumberContainer2 = document.getElementById("random-number-2");
+            randomNumberContainer2.textContent = randomNumber2.toFixed(3); // Displaying with 2 decimal places
 
             
             var thankYouMessage = document.getElementById("thank-you-message");
@@ -47,10 +53,10 @@
 <body onload="updateContent()">
     <h1>Welcome to erp-MEC: Buyers page</h1>
     <p>Your application's required usage level this time-slot, \(d_i\) is </p>
+    <p id="random-number-1"></p>
 
-    <p id="random-number"></p>
-
-    <p>Your utility obtained, and hence willingness to pay, \(u_i\) is <span id="random-number"></span> </p>
+    <p>Your utility obtained, and hence willingness to pay, \(u_i\) is </p>
+    <p id="random-number-2"></p>
 
 
     <p> If you choose the On-Demand Pool, your payoff \(= u_i q_o - p_o \).</p>
