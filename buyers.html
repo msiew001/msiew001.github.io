@@ -10,8 +10,12 @@
     <script>
         // Function to generate a random number from the provided list
         function getRandomNumber() {
-            return Math.random();
-            
+            return Math.random();  
+        }
+
+        function getRandomElement(list) {
+            var randomIndex = Math.floor(Math.random() * list.length);
+            return list[randomIndex];
         }
 
         // Function to update the content of the webpage
@@ -44,8 +48,11 @@
             var prElement = document.getElementById("p-r");
             prElement.textContent = pr;
 
+            var randomAppls = ['IoT Sensing Analytics', 'Mobile Gaming', 'Augmented Reality', 'Data Analytics on Device', 'Smart Home IoT Analytics'];
+            var randomAppl = getRandomElement(randomAppls);
 
-
+            var randomWordElement = document.getElementById("random-appl");
+            randomWordElement.textContent = randomWord;
 
             
             var thankYouMessage = document.getElementById("thank-you-message");
@@ -78,13 +85,15 @@
 </head>
 <body onload="updateContent()">
     <h1>Welcome to erp-MEC: Buyers page</h1>
+    <p> The application you are using is <em><span id="random-appl"></span></em> </p>
+    
     <p>Your application's required usage level this time-slot, \(d_i\) is </p>
     <p id="random-number-1"></p>
 
     <p>Your utility obtained, and hence willingness to pay, \(u_i\) is </p>
     <p id="random-number-2"></p>
 
-    <p> The current prices and supply levels are as follows </p>
+    <p> The current prices and supply levels are as follows: </p>
 
     <table border="1">
         <tr>
