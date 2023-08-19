@@ -12,6 +12,9 @@
         font-family: 'Montserrat', sans-serif;
             text-align: center;
     }
+        .centered-content {
+            margin: 0 auto;
+        }
         .math-font {
         font-family: "Cambria Math", Times, serif;
     }
@@ -79,42 +82,44 @@
     
 </head>
 <body onload="updateContent()">
-    <img src="prototypeLogo.png" >
-    <h1>Welcome to the Re-sellers portal </h1>
-
-    <p> The application you are using is <em><span id="random-appl"></span></em> </p>
+    <div class="centered-content">
+        <img src="prototypeLogo.png" >
+        <h1>Welcome to the Re-sellers portal </h1>
     
-    <p>After factoring in your usage level, your remaining usage quota for this time-slot is </p>
-
-    <p id="random-number"></p>
-
-    <p>Your inconvenience cost of selling, \(g_i\), inclusive of the uncertainty of further usage this time-slot is </p>
-    <p id="random-number-2"></p>
-
-    <p> The price at which you will re-sell resource units, and the platform commission is: </p>
-
-    <div class="centered-table">
-        <table border="1">
-            <tr>
-                <th>Price obtained when re-selling </th>
-                <th>Platform Commission</th>
-            </tr>
-            <tr>
-                <td>\(p_r = \) <span id="p-r"></span></td>
-                <td>\(\delta = \) <span id="delta"></span></td>
-            </tr>
-            
-        </table>
+        <p> The application you are using is <em><span id="random-appl"></span></em> </p>
+        
+        <p>After factoring in your usage level, your remaining usage quota for this time-slot is </p>
+    
+        <p id="random-number"></p>
+    
+        <p>Your inconvenience cost of selling, \(g_i\), inclusive of the uncertainty of further usage this time-slot is </p>
+        <p id="random-number-2"></p>
+    
+        <p> The price at which you will re-sell resource units, and the platform commission is: </p>
+    
+        <div class="centered-table">
+            <table border="1">
+                <tr>
+                    <th>Price obtained when re-selling </th>
+                    <th>Platform Commission</th>
+                </tr>
+                <tr>
+                    <td>\(p_r = \) <span id="p-r"></span></td>
+                    <td>\(\delta = \) <span id="delta"></span></td>
+                </tr>
+                
+            </table>
+        </div>
+    
+        <p> If you choose to re-sell, your payoff \(= (1-\delta)p_r - g_i \).</p>
+    
+        <p> If you choose not to re-sell, your payoff \(= 0\).</p>
+    
+    
+        <p>Do you want to re-sell your excess compute resource quota units?</p>
+        <button id="yes-button">Yes</button>
+        <button id="no-button">No</button>
+        <p id="thank-you-message"></p>
     </div>
-
-    <p> If you choose to re-sell, your payoff \(= (1-\delta)p_r - g_i \).</p>
-
-    <p> If you choose not to re-sell, your payoff \(= 0\).</p>
-
-
-    <p>Do you want to re-sell your excess compute resource quota units?</p>
-    <button id="yes-button">Yes</button>
-    <button id="no-button">No</button>
-    <p id="thank-you-message"></p>
 </body>
 </html> 
