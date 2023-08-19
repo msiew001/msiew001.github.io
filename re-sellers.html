@@ -19,6 +19,9 @@
             width: 50vw; /* Set the desired width */
             height: auto; /* Maintain aspect ratio */
         }
+        .centered-table {
+            margin: 0 auto;
+        }
     </style>
     
     <script>
@@ -90,17 +93,19 @@
 
     <p> The price at which you will re-sell resource units, and the platform commission is: </p>
 
-    <table border="1">
-        <tr>
-            <th>Price obtained when re-selling </th>
-            <th>Platform Commission</th>
-        </tr>
-        <tr>
-            <td>\(p_r = \) <span id="p-r"></span></td>
-            <td>\(\delta = \) <span id="delta"></span></td>
-        </tr>
-        
-    </table>
+    <div class="centered-table">
+        <table border="1">
+            <tr>
+                <th>Price obtained when re-selling </th>
+                <th>Platform Commission</th>
+            </tr>
+            <tr>
+                <td>\(p_r = \) <span id="p-r"></span></td>
+                <td>\(\delta = \) <span id="delta"></span></td>
+            </tr>
+            
+        </table>
+    </div>
 
     <p> If you choose to re-sell, your payoff \(= (1-\delta)p_r - g_i \).</p>
 
