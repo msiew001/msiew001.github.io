@@ -92,11 +92,6 @@
 
             optionAButton.addEventListener("click", function() {
                 thankYouMessage.textContent = "Thank you for your choice!";
-                fetch("update_counter.py")
-                .then(response => response.text())
-                .then(newCounterValue => {
-                    counterElement.textContent = newCounterValue;
-                });
             });
 
             optionBButton.addEventListener("click", function() {
