@@ -11,15 +11,14 @@
         body {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-    }
-        
-        
+        }
+                
         .centered-content {
             margin: 0 auto;
         }
         .math-font {
         font-family: "Cambria Math", Times, serif;
-    }
+        }
         img {
             width: 50vw; /* Set the desired width */
             height: auto; /* Maintain aspect ratio */
@@ -29,6 +28,11 @@
             img {
                 width: 100%; /* Full width on mobile */
             }   
+        }
+
+        .centered-table {
+            margin: 0 auto;
+            /*  max-width: 80%; Adjust this value as needed */
         }
         
     </style>
@@ -43,8 +47,6 @@
             var randomIndex = Math.floor(Math.random() * list.length);
             return list[randomIndex];
         }
-
-        
 
         // Function to update the content of the webpage
         function updateContent() {
@@ -120,25 +122,26 @@
     
         <p> The current prices and supply levels are as follows: </p>
     
-       
-        <table border="1">
-            
-            <tr>
-                <th>   </th>
-                <th>On-Demand Pool</th>
-                <th>Sharing Pool (Re-sold Units)</th>
-            </tr>
-            <tr>
-                <td>Supply level </td>
-                <td>\(q_o = \) <span id="q-o"></span></td>
-                <td>\(q_s = \) <span id="q-s"></span></td>
-            </tr>
-            <tr>
-                <td>Price</td>
-                <td>\(p_o = \) <span id="p-o"></span></td>
-                <td>\(p_r = \) <span id="p-r"></span></td>
-            </tr>        
-        </table>
+        <div class="centered-table">
+            <table border="1">
+                
+                <tr>
+                    <th>   </th>
+                    <th>On-Demand Pool</th>
+                    <th>Sharing Pool (Re-sold Units)</th>
+                </tr>
+                <tr>
+                    <td>Supply level </td>
+                    <td>\(q_o = \) <span id="q-o"></span></td>
+                    <td>\(q_s = \) <span id="q-s"></span></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>\(p_o = \) <span id="p-o"></span></td>
+                    <td>\(p_r = \) <span id="p-r"></span></td>
+                </tr>        
+            </table>
+        </div>
         
         <p> If you choose the On-Demand Pool, your payoff \(= u_i q_o - p_o \).</p>
     
